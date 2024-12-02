@@ -14,5 +14,6 @@ if __name__ == "__main__":
 
     v = Visitor()
     v.visit_file(ast)
+    is_valid = v.is_satisfiable()
 
-    print(v.constraints)
+    print(f"Satisfies ownership rules? {is_valid}")
